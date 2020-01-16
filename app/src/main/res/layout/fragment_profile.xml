@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Profile">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="#00FFFFFF"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/profile_menu"
+        app:title="Profile"
+        app:titleTextColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="casual"
+        android:text="Name:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/name_edit"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_picture" />
+
+    <TextView
+        android:id="@+id/status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="casual"
+        android:text="Status:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_edit" />
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="148dp"
+        android:layout_height="135dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="80dp"
+        android:src="@drawable/profile"
+        android:tint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/edit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="casual"
+        android:text="Edit"
+        android:textColor="#209126"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="casual"
+        android:text="Button"
+        android:textColor="#209126"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="60dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        android:text="Chin Vun Khim"
+        android:textAlignment="center"
+        android:textColor="#B2000000"
+        android:textColorHint="#00FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_picture" />
+
+    <EditText
+        android:id="@+id/age_edit"
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:fontFamily="casual"
+        android:inputType="textPersonName"
+        android:numeric="integer"
+        android:text="21"
+        android:textAlignment="center"
+        android:textColor="#B3000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit" />
+
+    <TextView
+        android:id="@+id/age_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="casual"
+        android:text="Age:"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/age_edit"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_edit" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="209dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="60dp"
+        android:background="#FFFFFF"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="Unknown"
+        android:textAlignment="center"
+        android:textColor="#B3000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/age_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
